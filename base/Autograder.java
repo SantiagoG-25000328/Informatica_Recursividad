@@ -12,7 +12,7 @@ public class Autograder {
             public boolean accept(File dir, String name) {
                 return name.endsWith(".binary_tree");
             }
-        });
+        });//a
 
         if (treeFiles == null || treeFiles.length == 0) {
             System.out.println("No tests found.");

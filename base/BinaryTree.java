@@ -158,4 +158,21 @@ public class BinaryTree {
 
     }
 
+    // Temporal
+    public void imprimirCaminos(int maxLen) {
+    imprimirRec(root, "", maxLen);
+}
+
+private void imprimirRec(Node n, String pref, int maxLen) {
+    if (n == null) return;
+
+    String nuevo = pref + n.value;
+    System.out.println(nuevo);
+
+    if (nuevo.length() == maxLen) return;
+
+    imprimirRec(n.left, nuevo, maxLen);
+    imprimirRec(n.right, nuevo, maxLen);
+}
+
 }

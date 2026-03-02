@@ -19,6 +19,8 @@ public class Main {
             }
         }
 
+        binary_tree.imprimirCaminos(5);
+
         string_writer.close();
     }
 }
